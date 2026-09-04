@@ -262,7 +262,6 @@ ul { margin:  0 0 1em; padding-left: 1.2em; }
 .skills-wrap { display: grid; grid-template-columns: repeat(2,1fr); gap:  28px; }
 .skill-group h3 { font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--text); }
 .tag-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap:  8px; }
-.
 /* Research */
 .research-grid { display: grid; grid-template-columns: repeat(2,1fr); gap:  20px; }
 .research-item { background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }

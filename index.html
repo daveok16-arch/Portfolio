@@ -4,14 +4,357 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dave Ok — AI Developer &amp; Creative Technologist</title>
-  <meta name="description" content="Portfolio of Dave Ok: AI developer and creative technologist building and evaluating practical AI workflows, automation tools, and technical systems. Evidence-driven research, browser automation, security research, and AI-assisted development.">
+  <meta name="description" content="Portfolio of Dave Ok: AI developer and creative technologist building and evaluating practical AI workflows, automation tools, and technical systems. Evidence-driven research, browser automation, security research,and AI-assisted development.">
   <meta name="author" content="Dave Ok">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dave Ok — AI Developer &amp; Creative Technologist">
-  <meta property="og:description" content="I build and evaluate practical AI workflows, automation tools, and technical systems — real projects, real evidence, clear thinking.">
+  <meta property="og:description" content="I build and evaluate practical AI workflows, automation tools,and technical systems — real projects, real evidence, clear thinking.">
   <meta property="og:image" content="https://daveok16-arch.github.io/Portfolio/assets/img/og-image.png">
   <meta property="og:url" content="https://daveok16-arch.github.io/Portfolio/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://daveok16-arch.github.io/Portfolio/">
   <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
-  </head>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Dave&nbsp;Ok</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#ai">AI Practice</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="hero-kicker">AI Developer &amp; Creative Technologist</p>
+        <h1 class="hero-title">I investigate hard problems, build working tools, and evaluate results with evidence.</h1>
+        <p class="hero-lede">I build and evaluate practical AI workflows, automation systems, and technical research pipelines — combining software development, browser automation, and evidence-driven analysis. Every project here comes from real source code and measurable verification, not promises.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Selected Work</a>
+          <a class="btn btn-secondary" href="#contact">Contact</a>
+        </div>
+        <div class="hero-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Open to AI/creative network work — evaluate me on real evidence.</span>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Selected Work</p>
+          <h2>Real projects, built in the open.</h2>
+          <p class="section-sub">Four projects shipped to public repositories. Each one solves a concrete problem and carries verifiable artifacts — source code, tests, docs, and research results.</p>
+        </header>
+        <div class="work-grid">
+
+          <article class="card work-card">
+            <div class="card-tags"><span class="tag">Security research platform</span><span class="tag">TypeScript</span><span class="tag">React</span></div>
+            <h3>Intent Security Workbench</h3>
+            <p>Modular platform for authorized, multi-program security research — with anti-fabrication architecture: SHA-256 evidence provenance, a strict 10-state finding state machine, engine availability truthfulness, and a command sandbox. 88-test suite guards the invariants.</p>
+            <ul class="evidence-list">
+              <li>179-file monorepo architecture (core, orchestrator, evidence, engines, sandbox, React workbench UI)</li>
+              <li>88 Vitest tests — 79 pass on a clean host;remaining 9 are real-tool execution tests whose binaries are honestly reported NOT_INSTALLED</li>
+              <li>Live UI screenshots below from the running dev server</li>
+            </ul>
+            <a class="card-link" href="https://github.com/daveok16-arch/Intent-Security-Workbench" rel="noopener" target="_blank">View source on GitHub<span aria-hidden="true"> →</span></a>
+          </article>
+
+          <article class="card work-card">
+            <div class="card-tags"><span class="tag">Browser automation</span><span class="tag">WebSocket interception</span><span class="tag">Statistics</span></div>
+            <h3>Virtual Football Engine +EV research</h3>
+            <p>Chrome DevTools Protocol capture of a live sportsbook virtual-football WebSocket feed, decoupled prediction-engine seam. Then a rigorous, sample-size-gated validation confirmed a real pricing edge. The edge became a live bot with conservative sizing.</p>
+            <ul class="evidence-list">
+              <li>n=156 races / 5,726 exacta pairs validated — PASS verdict at the threshold shown below, with 95% Wilson confidence intervals</li>
+              <li>Exclusion of the unconfirmable long-tail (prod &gt; 50) — no betting what cannot be validated</li>
+              <li>Engine seam contract documented for future prediction models</li>
+            </ul>
+            <a class="card-link" href="https://github.com/daveok16-arch/virtual-football" rel="noopener" target="_blank">View source on GitHub<span aria-hidden="true"> →</span></a>
+          </article>
+
+          <article class="card work-card">
+            <div class="card-tags"><span class="tag">Trading infrastructure</span><span class="tag">Playwright</span><span class="tag">Risk engineering</span></div>
+            <h3>CHAMBERFX Pocket Option OTC bot</h3>
+            <p>Live price capture from an OTC binary-options WebSocket via headless Chromium, pipelined through a clean strategy → risk → execution architecture. Paper trading is the default; live execution must be explicitly armed. A self-review found and fixed two critical safety bugs before merge.</p>
+            <ul class="evidence-list">
+              <li>30-check risk smoke test covering stake caps, cooldowns, loss stops, price sanity, paper/live gating</li>
+              <li>Critical bug found by review: an isDemo regex made the live path unreachable — fixed with regression tests</li>
+              <li>Layered architecture documented in repo README and HANDOFF</li>
+            </ul>
+            <a class="card-link" href="https://github.com/daveok16-arch/Chamberfx-pocket-option" rel="noopener" target="_blank">View source on GitHub<span aria-hidden="true"> →</span></a>
+          </article>
+
+          <article class="card work-card">
+            <div class="card-tags"><span class="tag">AI/ML pipeline</span><span class="tag">Python</span><span class="tag">Multi-agent</span></div>
+            <h3>AI/ML Forex Signals Bot</h3>
+            <p>A seven-agent Python pipeline: data ingestion → model training (ensemble, HPO) → signal generation → risk management → backtesting → execution → monitoring/cloud sync. Includes Kaggle GPU notebooks, CI workflow, and a pipeline validation suite that runs every agent with minimal data.</p>
+            <ul class="evidence-list">
+              <li>7-agent architecture with typed base-class contracts and pipeline orchestrator</li>
+              <li>Walk-forward backtesting, Monte Carlo, Deflated Sharpe Ratio, Kelly/VaR risk controls (documented)</li>
+              <li>Integration validation suite: agents A–G execute end-to-end</li>
+            </ul>
+            <a class="card-link" href="https://github.com/daveok16-arch/forex-signals-bot-v3" rel="noopener" target="_blank">View source on GitHub<span aria-hidden="true"> →</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <section class="section section-tint" id="case-studies">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Case Studies</p>
+          <h2>Two deep dives, with real artifacts.</h2>
+          <p class="section-sub">Problem → Approach → Implementation → Evidence. Screenshots below are real captures from the running Intent Security Workbench dev server.</p>
+        </header>
+
+        <article class="case-study">
+          <h3>Case Study 1 — Intent Security Workbench: architecture that cannot fake findings</h3>
+          <div class="case-grid">
+            <div class="case-text">
+              <h4>Problem</h4>
+              <p>Security research across multiple bug-bounty platforms and blockchain ecosystems needs structure: scope discipline, verification state, provenance, and — critically — protection against fabricated or overstated findings.</p>
+              <h4>Approach</h4>
+              <p>I designed a modular monorepo where every subsystem enforces honesty by construction: findings move through a strict 10-state machine, artifacts get SHA-256 digests over raw bytes, engines report their real install status, and shell execution is confined to a sandbox that rejects compound commands and destructive verbs.</p>
+              <h4>Implementation</h4>
+              <p>TypeScript packages (core, orchestrator, evidence, source, agent-runtime), pluggable engine registry with real availability checks, Python FastAPI stub that honestly reports not_wired, a React/Vite research workbench UI (12 views), and a git-source-integrity engine running real host git operations.</p>
+              <h4>Evidence</h4>
+              <ul>
+                <li>88-test Vitest suite guarding the invariants (79 pass on a bare host; 9 real-tool tests truthfully report their missing tooling</li>
+                <li>Screenshots captured from the live dev server (dashboard and engine registry) and engine registry below</li>
+                <li>docs/: ARCHITECTURE, EVIDENCE_MODEL, SECURITY_MODEL, PHASES plus more</li>
+              </ul>
+              <h4>Result</h4>
+              <p>A foundation that produces machine-verifiable evidence or nothing at all — designed to scale to real multi-program research in later phases.</p>
+              <h4>What I learned</h4>
+              <p>Anti-fabrication is an architectural property, not a policy: when validating a finding depends on authentic artifacts, the honest path is enforced by the state machine instead of by intentions.</p>
+            </div>
+            <div class="case-visuals">
+              <figure>
+                <img src="assets/img/workbench-dashboard.jpg" alt="Intent Security Workbench dashboard showing honest zero-state counters and live WebSocket log" width="1280" height="888" loading="lazy">
+                <figcaption>Workbench dashboard — live from the dev server. Counters start at zero because no synthetic data is injected.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/img/workbench-engines.jpg" alt="Engine registry listing tree-sitter AVAILABLE and other engines NOT INSTALLED with reasons" width="1280" height="888" loading="lazy">
+                <figcaption>Engine registry — real availability detection. Missing tools are labelled NOT INSTALLED, never faked.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-study">
+          <h3>Case Study 2 — Virtual Football: finding a real pricing edge, then proving it</h3>
+          <div class="case-grid">
+            <div class="case-text">
+              <h4>Problem</h4>
+              <p>A sportsbook streams virtual-football fixtures through a WebSocket inside an iframe. There was no documented API. I needed deterministic scheduled fixtures, 1X2 odds, standings, and resolved results — and eventually a way to know whether a prediction model has any real edge versus noise.</p>
+              <h4>Approach</h4>
+              <p>I attached to the GoldenRace iframe via Chrome DevTools Protocol sub-sessions and intercepted its WebSocket frames, normalizing them into league → week → fixtures. Then I built the prediction engine as a decoupled seam and, crucially, a rigorous validator before trusting any model.</p>
+              <h4>Implementation</h4>
+              <p>Node.js + Puppeteer CDP interception, NDJSON accumulation, Telegram delivery, and an engine contract (analyze() returning report, valueReport, summary, metrics). The validator computes Harville exacta probabilities from win probabilities, thresholds strategies with 95% Wilson confidence intervals, break-even tests, Brier scores, and a sample-size-gated PASS/FAIL verdict.</p>
+              <h4>Evidence</h4>
+              <ul>
+                <li>n=156 races, 5,726 exacta pairs — PASS. At threshold odds×Harville &gt; 0.93: ROI +433.9%, win rate 95% CI [2.78%,4.51%] vs break-even 0.53%</li>
+                <li>The same numbers appear in the repo commit history and validator source</li>
+                <li>Speculative tail (prod &gt; 20–50) flagged or excluded — never recommended what cannot be validated</li>
+              </ul>
+              <h4>Result</h4>
+              <p>A live exacta bot applying the confirmed edge with fractional-Kelly sizing, per-slate bankroll caps, and mutual-exclusivity-aware staking — built after, not before, the evidence existed.</p>
+              <h4>What I learned</h4>
+              <p>Sample-size gating to PASS is behavioural: the disciplined exclusion of thin-data tails is what keeps a backtest from turning into a mirage.</p>
+            </div>
+            <div class="case-visuals">
+              <figure>
+                <pre class="validation-block">// From exotic-bot.js (repo source, verbatim)
+// Validation CONFIRMED at n=156 races that exactas with
+// (odds × Harville) &gt; threshold are systematically +EV:
+// the house does NOT price exactas with Harville.
+//   thr&gt;0.93: ROI +433.9%
+//   win-rate 95% CI [2.78%,4.51%] vs break-even 0.53%
+// Sample gate: MIN_CAL_SAMPLES=100; prod&gt;20 flagged;
+//   prod&gt;50 excluded — a thin-data noise tail.
+// Methodology: Harville exacta probs, Wilson 95% CIs,
+//   break-even tests, Brier score, PASS/FAIL verdict.</pre>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="ai">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">AI Capabilities</p>
+          <h2>How I actually work with AI.</h2>
+          <p class="section-sub">Not buzzwords — working methods visible in the repos: AI agents co-author code with me, AI reviews catch real bugs, AI-assisted research is gated by statistics, and AI output is never trusted unexamined.</p>
+        </header>
+        <div class="ai-grid">
+          <div class="ai-item">
+            <h3>Agent-assisted development</h3>
+            <p>Multi-agent sessions (OpenHands, opencode, aider) are logged and handoff-documented in repo AGENTS.md files — including session memory, verification steps, and explicit "do not fake" invariants.</p>
+          </div>
+          <div class="ai-item">
+            <h3>AI-assisted code review</h3>
+            <p>Automated review bots (CodeRabbit) flagged real issues; I then self-reviewed harder finds two critical safety bugs the bots missed — including a regex making live trading unreachable — and fixed them with regression tests before merge.</p>
+          </div>
+          <div class="ai-item">
+            <h3>AI-validated research</h3>
+            <p>AI/ML is used where it helps (ensemble models, HPO, predictive seams), but the final word is statistical validation: sample-size-gated tests, Wilson confidence intervals, break-even checks.</p>
+          </div>
+          <div class="ai-item">
+            <h3>Human-in-the-loop evaluation</h3>
+            <p>AI outputs land in reviewable artifacts: jsonl evidence streams, NDJSON race logs, Telegram reports, and UI dashboards that refuse synthetic data. A human decides; AI proposes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-tint" id="capabilities">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Technical Capabilities</p>
+          <h2>Tools proven by shipped code.</h2>
+          <p class="section-sub">Every item below appears in real repository code, commits, or docs — nothing listed that I have not actually used.</p>
+        </header>
+        <div class="skills-wrap">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="tag-list">
+              <li><span class="tag">TypeScript</span></li><li><span class="tag">JavaScript</span></li><li><span class="tag">Python</span></li><li><span class="tag">SQLite (via store)</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend &amp; UI</h3>
+            <ul class="tag-list">
+              <li><span class="tag">React</span></li><li><span class="tag">Vite</span></li><li><span class="tag">Tailwind CSS</span></li><li><span class="tag">Accessible semantic HTML</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Automation</h3>
+            <ul class="tag-list">
+              <li><span class="tag">Node.js</span></li><li><span class="tag">Express</span></li><li><span class="tag">WebSocket</span></li><li><span class="tag">Playwright / Puppeteer</span></li><li><span class="tag">Chrome DevTools Protocol</span></li><li><span class="tag">REST APIs</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Research &amp; Security</h3>
+            <ul class="tag-list">
+              <li><span class="tag">SHA-256 evidence provenance</span></li><li><span class="tag">Static analysis concepts (semgrep, tree-sitter)</span></li><li><span class="tag">Sandboxed command execution</span></li><li><span class="tag">Statistical validation (Wilson CIs, sample-size gating)</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Workflow</h3>
+            <ul class="tag-list">
+              <li><span class="tag">Git / GitHub</span></li><li><span class="tag">CI pipelines</span></li><li><span class="tag">Docker / Render deploy</span></li><li><span class="tag">Multi-agent AI sessions</span></li><li><span class="tag">Technical docs (ARCHITECTURE, HANDOFF, AGENTS)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="research">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Research &amp; Security</p>
+          <h2>Security research, done responsibly.</h2>
+          <p class="section-sub">My security work focuses on the craft that produces reliable findings: source-code inspection, vulnerability reasoning, reproducibility, and evidence discipline. No exploit weaponization, no fabricated results.</p>
+        </header>
+        <div class="research-grid">
+          <div class="research-item">
+            <h3>Source-code inspection</h3>
+            <p>Workbench fixtures include deliberately secure-vs-vulnerable BOLA pairs; static engines (tree-sitter AST queries, semgrep, slither, angr, codeql seams) target these genuinely.</p>
+          </div>
+          <div class="research-item">
+            <h3>Vulnerability reasoning</h3>
+            <p>Findings move through a strict 10-state machine: CANDIDATE → ANALYZING → VERIFICATION_REQUIRED → TESTING → REPRODUCED → VALIDATED → CONFIRMED — with transitions to verified states blocked unless linked evidence artifacts exist.</p>
+          </div>
+          <div class="research-item">
+            <h3>Reproducibility &amp; provenance</h3>
+            <p>Every artifact hashes its exact bytes with SHA-256; provenance chains record investigation → target → source snapshot → engine → command → timestamps. Tamper checks re-compute hashes at verify time.</p>
+          </div>
+          <div class="research-item">
+            <h3>Responsible practice</h3>
+            <p>Engine containment avoids shell interpolation; the sandbox rejects compound commands, redirection into protected paths, and destructive verbs; external network scanning is restricted by design in Phase 0. No live exploits are published.</p>
+          </div>
+        </div>
+        <p class="research-note">The workbench is at Phase 0 — foundational architecture for authorized research. It is explicitly designed to report UNAVAILABLE rather than fabricate success.</p>
+      </div>
+    </section>
+    <section class="section section-tint" id="about">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">About</p>
+          <h2>Curious, independent, evidence-driven.</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am an AI developer and creative technologist who learns by shipping real projects in the open. The repos behind this portfolio show the pattern: investigate a difficult technical problem, build the tooling to understand it, question the results statistically, and publish the evidence for others to inspect.</p>
+            <p>Notable working style signals from the actual work: I delete losing code rather than defend it; I gate bets behind minimum sample sizes; I fix the two critical bugs automated review missed and write regression tests; I design systems that can speak the word NOT_INSTALLED instead of pretending.</p>
+          </div>
+          <div class="about-facts">
+            <h3>Working principles</h3>
+            <ul>
+              <li>Evidence before claims</li>
+              <li>Safety defaults by design (paper-first, sandboxed, gated)</li>
+              <li>Verification before trust — of AI, of models, of myself</li>
+              <li>Documented handoffs and session memory for collaborator continuity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Contact</p>
+          <h2>Let us talk about the work.</h2>
+          <p class="section-sub">Fill in your details below before deploying — fields are marked with [you].</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-card card">
+            <h3>Direct</h3>
+            <ul class="contact-list">
+              <li><strong>Email (not configured)</strong> — <span class="placeholder">[your.email@example.com]</span></li>
+              <li><strong>LinkedIn (optional)</strong> — <span class="placeholder">[linkedin.com/in/your-profile]</span></li>
+              <li><strong>GitHub</strong> — <a href="https://github.com/daveok16-arch" rel="noopener" target="_blank">github.com/daveok16-arch</a> (real, active)</li>
+            </ul>
+          </div>
+          <div class="contact-card card">
+            <h3>Contra Labs details</h3>
+            <ul class="contact-list">
+              <li><strong>Portfolio URL</strong> — <span class="placeholder">[your deployed URL, suggested: https://daveok16-arch.github.io/]</span></li>
+              <li><strong>Hourly rate</strong> — <span class="placeholder">[your rate]</span></li>
+              <li><strong>Availability</strong> — <span class="placeholder">[start date]</span></li>
+              <li><strong>Weekly availability</strong> — <span class="placeholder">[hours/week]</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="contact-note">Availability indicator: open to AI/creative-network projects. These placeholders are the only personal fields you must replace.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Dave Ok — AI Developer &amp; Creative Technologist.</p>
+      <p class="footer-note">Portfolio built for a Contra Labs application, from real public repositories. No synthetic claims; every project links to inspectable source.</p>
+    </div>
+  </footer>
+</body>
+</html>
