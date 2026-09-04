@@ -65,38 +65,31 @@ verifiable public work — six public GitHub repositories under github.com/daveo
 ## 5. Local development
 
 ```bash
-cd portfolio
 python3 -m http.server 8800
 # open http://localhost:8800/
 ```
 
 Any static server works. No build step is required.
 
-## 6. Production build / deploy (GitHub Pages\)
+## 6. Deploy (GitHub Pages — repo: daveok16-arch/Portfolio)
+
+The site files already live at this repository's root (no subfolder). To push:
 
 ```bash
-cd portfolio
-git init
-git add .
-git commit -m "Portfolio: AI Developer and Creative Technologist"
-# push to a repo named <username>.github.io (recommended pace\)
 git branch -M main
-git remote add origin https://github.com/daveok16-arch/daveok16-arch.github.io.git
+git remote add origin https://github.com/daveok16-arch/Portfolio.git
 git push -u origin main
-# then enable GitHub Pages in repo Settings → Pages → Source: Deploy from a branch → main → / (root\)
+#then enable GitHub Pages in repo Settings → Pages → Source: Deploy from a branch → main → / (root)
 # Available at:
-# https://daveok16-arch.github.io/
+# https://daveok16-arch.github.io/Portfolio/
 ```
 
-Alternative (project-repo Pages\): put these files in a repo (e.g. portfolio\), push, then in
-Settings → Pages set source to main and folder /(root\). The site will live at
-`https://daveok16-arch.github.io/<repo>/` — if you prefer that, update the canonical/OG URLs in index.html.
+The canonical + OG URLs in index.html already point at the /Portfolio/ path.
 
 ## 7. Final URL structure
 
-- `https://daveok16-arch.github.io/` — homepage (if user-repo Pages\)
-- `https://daveok16-arch.github.io/portfolio/` — homepage (if project-repo Pages\)
-- Assets under /assets/css, /assets/js, /assets/img
+- `https://daveok16-arch.github.io/Portfolio/` — homepage (GitHub Pages, root folder of this repo)
+- Assets under `/assets/css`, `/assets/js`, `/assets/img`
 
 ## 8. Claims deliberately avoided (not verifiable\)
 
@@ -147,11 +140,11 @@ on GitHub. Thanks for watching.
 ## 11. Repository layout
 
 ```
-portfolio/
-  index.html            # single-page site
-  assets/css/style.css   # design system, responsive
-  assets/js/main.js       # nav toggle, year
-  assets/img/             # case-study screenshots + OG image
-  favicon*.png            # favicon set
-  README.md              # this file
+. (repo root                    # daveok16-arch/Portfolio
+  index.html                     # single-page site
+  assets/css/style.css          # design system, responsive
+  assets/js/main.js              # nav toggle, year
+  assets/img/                    # case-study screenshots + OG image
+  favicon*.png                   # favicon set
+  README.md                     # this file
 ```
