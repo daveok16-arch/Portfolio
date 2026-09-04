@@ -51,6 +51,15 @@
 - Nothing fabricated: all four facts (88-test suite, 156 races, Wilson CIs, CDP/interception** are already live in your GitHub repos and on the portfolio*
 - 30 seconds hits their ask without rambling; reviewers can verify everything in under a minute*
 
-## If you'd rather have me produce it
+## Your b-roll is already cut (made just now from your live Workbench dev server**
 
-I can clone one of your repos, run the dev server,& record the working product on screen for a b-roll cut (headless Chromium screenshot capability is already proven in this environment*. Say the word and the deliverables will be a short screen-recorder b-roll you splice under your voiceover*. (Or I can draft the 60-second extended version for a fuller Contra narrative*.**
+Two files are now in the repo (committed with this doc**:
+
+| File | What it is | Use it as |
+|---|---|---|
+| `assets/video/workbench-broll.mp4` | 1.1 s 1280x800,, 12 fps,, H.264 clip of the running Workbench UI (dashboard → engines → dashboard with cursor motion** | a quick cut under your voiceover around the «Intent Security Workbench» sentences* |
+| `assets/video/workbench-poster.jpg` | 1280x800 still from the dashboard** | video thumbnail / title card or your application header |
+
+- Both were captured **headless** from the actual `npm run dev` server on `:3000` (the real UI, not mockups*
+- Trim/loop it in any editor (it loops cleanly via `-stream_loop` if you want a longer hold**
+- Want a longer version or the `/findings` view too? Say the word — I'll re-record quickly*
